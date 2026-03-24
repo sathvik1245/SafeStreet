@@ -1,0 +1,110 @@
+.edit-btn{
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  margin-right: 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  margin-left:10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: 100px auto 2rem auto;
+  padding: 2rem;
+  background-color: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  color: var(--text);
+}
+
+.profile-container h2 {
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  font-size: 1.8rem;
+}
+
+.profile-card {
+  text-align: left;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.6;
+  background-color: var(--background);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-card p {
+  margin: 0.5rem 0;
+}
+
+/* General Button Styling */
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--btnColour);
+  color: var(--buttonText);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Edit Button */
+.edit-btn-p {
+  margin-right: 15px;
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--btnColour);
+  color: var(--buttonText);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Secondary Button */
+.btn-btn-secondary {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  margin-right: 15px;
+  background-color:var(--btnColour);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  margin-left:10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover Effects */
+.btn:hover,
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .profile-container {
+    margin-top: 80px;
+    padding: 1.5rem;
+  }
+
+  .profile-card {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,38 @@
+# Appwrite SDK for database and storage operations
+appwrite==11.0.0
+
+# FastAPI web framework
+fastapi==0.111.0
+
+# Google Generative AI (Gemini) for damage analysis
+google-generativeai==0.6.0
+
+# HTTP client for direct Appwrite API calls
+httpx==0.27.0
+
+# Numerical computing
+numpy==1.26.4
+
+# Computer vision library (headless for server deployment)
+opencv-python-headless==4.8.1.78
+
+# Image processing
+pillow==9.5.0
+
+# Data validation
+pydantic==2.8.2
+
+# Environment variable management
+python-dotenv==1.0.1
+
+# PyTorch for deep learning
+torch==2.3.1
+
+# YOLOv8 object detection
+ultralytics==8.2.39
+
+# ASGI server for FastAPI
+uvicorn==0.30.1
+
+# Serialization library
+dill

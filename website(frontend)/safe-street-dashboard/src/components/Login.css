@@ -1,0 +1,131 @@
+.login-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+  padding: 2rem;
+  background-color: var(--card);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+
+.login-form .form-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+  width: 100%;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: var(--background); 
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+/* Password input + toggle */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px; /* Space for eye icon */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  font-size: 1.3rem;
+  color: #666;
+  cursor: pointer;
+}
+
+/* Login button */
+.btn1 {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--btnColour);
+  color: var(--buttonText);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn1:hover {
+  opacity: 0.9;
+}
+
+/* Error message */
+.error-msg {
+  color: red;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+/* Forgot password */
+.pw {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.adm {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.adm a {
+  color: var(--btnColour); /* Theme primary color */
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.adm a:hover {
+  color: var(--btnHover); /* Optional: Hover color */
+  text-decoration: none;
+}
+
+
+.login-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;       /* ensures image fills the space nicely */
+  border-radius: 50%;      /* makes it a circle */ 
+  border: 2px solid var(--btnColour); /* optional: adds a border */
+}
+
+.login-page {
+  margin-top:40px;
+  margin-left:55px;
+  margin-right:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+  background: var(--background);
+  box-sizing: border-box;
+}
+

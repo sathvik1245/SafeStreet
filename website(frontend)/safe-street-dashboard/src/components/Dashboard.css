@@ -1,0 +1,235 @@
+/* Global Reset */
+body, html {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  overflow-y: auto;
+}
+
+/* Dashboard Container */
+.dashboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 100px auto 2rem auto;
+}
+
+/* Page Title */
+.title {
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Grid Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card Styling */
+.card {
+  background-color: var(--card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  color: var(--text);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--text);
+  font-size: 1.25rem;
+}
+
+/* Overview Counts */
+.summary div {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Filter Controls */
+.filters select,
+.filters input[type="text"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: var(--card);
+  color: var(--text);
+}
+
+/* Placeholder for map loading */
+.map-placeholder {
+  height: 200px;
+  background-color: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Table Styling Scoped to Dashboard */
+.dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--text);
+}
+
+.dashboard table th, 
+.dashboard table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.dashboard table th {
+  background-color: var(--tableHeader);
+  color: var(--text);
+}
+
+.dashboard table td .btn {
+  margin: 2px;
+}
+
+/* Action Buttons Group */
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: var(--buttonText);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-btn-small {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btnColour);
+  color: var(--buttonText);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-btn-small:hover {
+  background-color: var(--btnHover);
+  transform: translateY(-2px);
+}
+
+.btn-btn-small:active {
+  transform: scale(0.98);
+}
+
+
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--buttonText);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.export .btn {
+  margin-top: 0.5rem;
+  width: auto;
+}
+
+/* Image Button Styling */
+.image-button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.image-button img {
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.image-button img:hover {
+  transform: scale(1.1);
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  pointer-events: none; /* Prevent interaction when hidden */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: var(--card);
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 600px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+  color: var(--text);
+}
+
+.modal-overlay.show .modal-content {
+  transform: scale(1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 6rem 2rem 2rem 2rem; /* Adjust for navbar */
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+
+
+
+
